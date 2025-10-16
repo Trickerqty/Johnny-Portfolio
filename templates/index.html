@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Johnny P. — Portfolio</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#home">My Personal Portfolio</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home <i class="fa-solid fa-house"></i></a></li>
+        <li><a href="#about">About <i class="fa-solid fa-user"></i></a></li>
+        <li><a href="#skills">Skills <i class="fa-solid fa-code"></i></a></li>
+        <li><a href="#projects">Projects <i class="fa-solid fa-diagram-project"></i></a></li>
+        <li><a href="#contact">Contact <i class="fa-solid fa-paper-plane"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Hi, I’m</p>
+          <h1 class="hero-title">Johnny P.</h1>
+          <p class="hero-subtitle">Data Scientist · Data Analyst · Python Developer</p>
+          <div class="cta-wrap">
+            <a class="btn primary" href="{{ url_for('static', filename='pdf/Resume-Pillazo.pdf') }}" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+            <a class="btn outline" href="#contact">
+              <i class="fa-solid fa-comments"></i> Let’s Talk
+            </a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="profile-frame">
+            <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile photo of Johnny P.">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="{{ url_for('static', filename='images/image1.png') }}" alt="Image working on a laptop">
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I’m a passionate Data Scientist and Analyst dedicated to transforming complex datasets into actionable insights.
+            I currently work as a Digital Data Analyst in the Asia-Pacific region and am pursuing a Master’s in Data Science.
+            My expertise spans data wrangling, statistical analysis, predictive modeling, and data visualization, with a growing specialization in artificial intelligence.
+            I enjoy solving real-world problems and building data-driven solutions that create meaningful impact.
+          </p>
+          <a class="btn outline" href="#projects"><i class="fa-solid fa-arrow-right"></i> View Projects</a>
+        </div>
+      </div>
+    </section>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title t-center">Skills</h2>
+        <div class="skills-list">
+          <div class="skill">
+            <div class="skill-top">
+              <span>Core Python</span><span>95%</span>
+            </div>
+            <div class="bar"><span style="width: 95%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>Data Analysis (Excel, Pandas, Numpy)</span><span>98%</span>
+            </div>
+            <div class="bar"><span style="width: 98%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>Machine Learning</span><span>90%</span>
+            </div>
+            <div class="bar"><span style="width: 90%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>Deep Learning</span><span>85%</span>
+            </div>
+            <div class="bar"><span style="width: 85%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>Natural Language Processing</span><span>90%</span>
+            </div>
+            <div class="bar"><span style="width: 90%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>Computer Vission (YOLO, OpenCV)</span><span>85%</span>
+            </div>
+            <div class="bar"><span style="width: 85%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>Data Visualization (Excel, PowerBI, Tableau, Matplotlib, Seaborn, Plotly)</span><span>95%</span>
+            </div>
+            <div class="bar"><span style="width: 95%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>MLOps Tools (Ray, MLflow)</span><span>75%</span>
+            </div>
+            <div class="bar"><span style="width: 75%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>SQL/ MySQL</span><span>90%</span>
+            </div>
+            <div class="bar"><span style="width: 90%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>Basic Frontend (HTML, CSS, Bootsrap)</span><span>70%</span>
+            </div>
+            <div class="bar"><span style="width: 70%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top">
+              <span>Django and Flask</span><span>75%</span>
+            </div>
+            <div class="bar"><span style="width: 75%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="section-title t-center">Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Real Estate CMS</h3>
+            <p>Developed a centralized system to manage company data, automate document generation, and monitor sales performance.
+              Enabled real-time tracking of transactions and streamlined reporting, improving operational efficiency. </p>
+            <div class="disabled-links">
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a class="btn small" href="#" target="_blank" rel="noopener">
+                <i class="fa-solid fa-up-right-from-square"></i> Live
+              </a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>ChatBot</h3>
+            <p>Built an AI-powered chatbot to guide Filipinos in applying for IDs and accessing government services.
+              Implemented intent classification, retrieval-based response generation, and web integration to deliver accurate, real-time assistance.</p>
+            <div class="disabled-links">
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a class="btn small" href="#" target="_blank" rel="noopener">
+                <i class="fa-solid fa-up-right-from-square"></i> Live
+              </a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Review Sentiment Analysis</h3>
+            <p>Developed a sentiment classification model to categorize movie reviews as Positive, Negative, or Neutral.
+              Achieved 85% model accuracy and integrated MLflow for experiment tracking and reproducibility. </p>
+            <div class="disabled-links">
+              <a class="btn small outline" href="#" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a class="btn small" href="#" target="_blank" rel="noopener">
+                <i class="fa-solid fa-up-right-from-square"></i> Live
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title t-center">Contact</h2>
+        <form class="contact-form" method="post" action="#">
+          <div class="grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me about your project…" required></textarea>
+          </label>
+          <div class="contact-btn-container">
+            <button type="submit" class="btn primary" disabled>
+              <i class="fa-solid fa-paper-plane"></i> Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Johnny P. • Built with Flask</p>
+      <ul class="socials">
+        <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Main JS -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="{{ url_for('static', filename='js/page.js') }}" defer></script>
+</body>
+</html>
